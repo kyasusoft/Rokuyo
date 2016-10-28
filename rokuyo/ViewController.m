@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "rokuyo.h"
+#import "KYRokuyo.h"
 
 @interface ViewController ()
 
@@ -31,7 +31,7 @@
     int month = self.month.text.intValue;
     int day   = self.day.text.intValue;
     
-    rokuyo *r = [[rokuyo alloc] init];
+    KYRokuyo *r = [[KYRokuyo alloc] init];
     
     NSString *rokuyo = [r sinrekiToRokuyoWithYear:year
                                             month:month

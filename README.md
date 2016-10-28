@@ -1,13 +1,13 @@
-# Rokuyo
-西暦年月日から旧暦と六曜を求めるクラスのサンプル
+# rokuyo
+西暦年月日から旧暦と六曜を求めるクラスとそのサンプル
 
 ## License
 MIT
 
-# rokuyoクラスの使い方
+# KYRokuyoクラスの使い方
       必要ファイル
-      rokuyo.h
-      rokuyo.m
+      KYRokuyo.h
+      KYRokuyo.m
       kyureki.plist
       
       // メソッド

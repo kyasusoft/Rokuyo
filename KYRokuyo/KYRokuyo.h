@@ -1,6 +1,6 @@
 ﻿//
-//  rokuyo.h
-//  rokuyo
+//  KYRokuyo.h
+//  KYRokuyo
 //
 //  Created by kyasu on 08/02/14.
 //
@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface rokuyo : NSObject {
+@interface KYRokuyo : NSObject {
 }
 
 @property (assign, nonatomic) int kyuMonth;	// inMonthに対応する旧暦の月

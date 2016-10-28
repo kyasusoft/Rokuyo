@@ -1,6 +1,6 @@
 //
-//  rokuyo.m
-//  rokuyo
+//  KYRokuyo.m
+//  KYRokuyo
 //
 //  Created by kyasu on 08/02/14.
 //
@@ -8,9 +8,9 @@
 //  License: MIT
 //
 
-#import "rokuyo.h"
+#import "KYRokuyo.h"
 
-@interface rokuyo() {
+@interface KYRokuyo() {
     int _minYear;
     int _maxYear;
 }
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation rokuyo
+@implementation KYRokuyo
 
 - (id)init
 {

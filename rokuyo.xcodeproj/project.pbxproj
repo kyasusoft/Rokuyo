@@ -13,8 +13,8 @@
 		41DAEBBE1DC206C50011BB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DAEBBC1DC206C50011BB35 /* Main.storyboard */; };
 		41DAEBC01DC206C50011BB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DAEBBF1DC206C50011BB35 /* Assets.xcassets */; };
 		41DAEBC31DC206C50011BB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DAEBC11DC206C50011BB35 /* LaunchScreen.storyboard */; };
-		41DAEBD31DC2074F0011BB35 /* rokuyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DAEBD11DC2074F0011BB35 /* rokuyo.m */; };
-		41DAEBD61DC20E4A0011BB35 /* kyureki.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DAEBD51DC20E4A0011BB35 /* kyureki.plist */; };
+		41EB4EB91DC3520800D612C6 /* KYRokuyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB4EB71DC3520800D612C6 /* KYRokuyo.m */; };
+		41EB4EBA1DC3520800D612C6 /* kyureki.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4EB81DC3520800D612C6 /* kyureki.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		41DAEBBF1DC206C50011BB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41DAEBC21DC206C50011BB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41DAEBC41DC206C50011BB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41DAEBD01DC2074F0011BB35 /* rokuyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rokuyo.h; sourceTree = "<group>"; };
-		41DAEBD11DC2074F0011BB35 /* rokuyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rokuyo.m; sourceTree = "<group>"; };
-		41DAEBD51DC20E4A0011BB35 /* kyureki.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kyureki.plist; sourceTree = "<group>"; };
+		41EB4EB61DC3520800D612C6 /* KYRokuyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYRokuyo.h; path = KYRokuyo/KYRokuyo.h; sourceTree = SOURCE_ROOT; };
+		41EB4EB71DC3520800D612C6 /* KYRokuyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYRokuyo.m; path = KYRokuyo/KYRokuyo.m; sourceTree = SOURCE_ROOT; };
+		41EB4EB81DC3520800D612C6 /* kyureki.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyureki.plist; path = KYRokuyo/kyureki.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +88,9 @@
 		41DAEBD41DC2075F0011BB35 /* rokuyo */ = {
 			isa = PBXGroup;
 			children = (
-				41DAEBD51DC20E4A0011BB35 /* kyureki.plist */,
-				41DAEBD01DC2074F0011BB35 /* rokuyo.h */,
-				41DAEBD11DC2074F0011BB35 /* rokuyo.m */,
+				41EB4EB61DC3520800D612C6 /* KYRokuyo.h */,
+				41EB4EB71DC3520800D612C6 /* KYRokuyo.m */,
+				41EB4EB81DC3520800D612C6 /* kyureki.plist */,
 			);
 			name = rokuyo;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 				41DAEBC31DC206C50011BB35 /* LaunchScreen.storyboard in Resources */,
 				41DAEBC01DC206C50011BB35 /* Assets.xcassets in Resources */,
 				41DAEBBE1DC206C50011BB35 /* Main.storyboard in Resources */,
-				41DAEBD61DC20E4A0011BB35 /* kyureki.plist in Resources */,
+				41EB4EBA1DC3520800D612C6 /* kyureki.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,9 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DAEBD31DC2074F0011BB35 /* rokuyo.m in Sources */,
 				41DAEBBB1DC206C50011BB35 /* ViewController.m in Sources */,
 				41DAEBB81DC206C50011BB35 /* AppDelegate.m in Sources */,
+				41EB4EB91DC3520800D612C6 /* KYRokuyo.m in Sources */,
 				41DAEBB51DC206C50011BB35 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +325,7 @@
 				41DAEBC91DC206C50011BB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
