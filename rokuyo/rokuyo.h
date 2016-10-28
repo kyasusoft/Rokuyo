@@ -1,9 +1,11 @@
-//
+﻿//
 //  rokuyo.h
 //  rokuyo
 //
 //  Created by kyasu on 08/02/14.
-//  Copyright 2008 __MyCompanyName__. All rights reserved.
+//
+//  Copyright (c) 2008 Keietsu Yasuhara
+//  License: MIT
 //
 
 #import <UIKit/UIKit.h>
