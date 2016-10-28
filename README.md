@@ -18,7 +18,7 @@ MIT
     
       // プロパティ
       kyuMonth;	// 旧暦の月
-      kyuDay;	　　// 旧暦の日
+      kyuDay;	// 旧暦の日
  
       // plistの内容
     [
