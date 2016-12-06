@@ -15,7 +15,18 @@
 		41DAEBC31DC206C50011BB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DAEBC11DC206C50011BB35 /* LaunchScreen.storyboard */; };
 		41EB4EB91DC3520800D612C6 /* KYRokuyo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB4EB71DC3520800D612C6 /* KYRokuyo.m */; };
 		41EB4EBA1DC3520800D612C6 /* kyureki.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4EB81DC3520800D612C6 /* kyureki.plist */; };
+		75AA17AD1DF6BFFE008B2E02 /* rokuyoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA17AC1DF6BFFE008B2E02 /* rokuyoTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75AA17AF1DF6BFFE008B2E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41DAEBA81DC206C50011BB35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41DAEBAF1DC206C50011BB35;
+			remoteInfo = rokuyo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		41DAEBB01DC206C50011BB35 /* rokuyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rokuyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,10 +42,20 @@
 		41EB4EB61DC3520800D612C6 /* KYRokuyo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYRokuyo.h; path = KYRokuyo/KYRokuyo.h; sourceTree = SOURCE_ROOT; };
 		41EB4EB71DC3520800D612C6 /* KYRokuyo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYRokuyo.m; path = KYRokuyo/KYRokuyo.m; sourceTree = SOURCE_ROOT; };
 		41EB4EB81DC3520800D612C6 /* kyureki.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyureki.plist; path = KYRokuyo/kyureki.plist; sourceTree = SOURCE_ROOT; };
+		75AA17AA1DF6BFFE008B2E02 /* rokuyoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rokuyoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AA17AC1DF6BFFE008B2E02 /* rokuyoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rokuyoTests.m; sourceTree = "<group>"; };
+		75AA17AE1DF6BFFE008B2E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		41DAEBAD1DC206C50011BB35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA17A71DF6BFFE008B2E02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				41DAEBB21DC206C50011BB35 /* rokuyo */,
+				75AA17AB1DF6BFFE008B2E02 /* rokuyoTests */,
 				41DAEBB11DC206C50011BB35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				41DAEBB01DC206C50011BB35 /* rokuyo.app */,
+				75AA17AA1DF6BFFE008B2E02 /* rokuyoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +118,15 @@
 			name = rokuyo;
 			sourceTree = "<group>";
 		};
+		75AA17AB1DF6BFFE008B2E02 /* rokuyoTests */ = {
+			isa = PBXGroup;
+			children = (
+				75AA17AC1DF6BFFE008B2E02 /* rokuyoTests.m */,
+				75AA17AE1DF6BFFE008B2E02 /* Info.plist */,
+			);
+			path = rokuyoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +147,24 @@
 			productReference = 41DAEBB01DC206C50011BB35 /* rokuyo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		75AA17A91DF6BFFE008B2E02 /* rokuyoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75AA17B31DF6BFFE008B2E02 /* Build configuration list for PBXNativeTarget "rokuyoTests" */;
+			buildPhases = (
+				75AA17A61DF6BFFE008B2E02 /* Sources */,
+				75AA17A71DF6BFFE008B2E02 /* Frameworks */,
+				75AA17A81DF6BFFE008B2E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75AA17B01DF6BFFE008B2E02 /* PBXTargetDependency */,
+			);
+			name = rokuyoTests;
+			productName = rokuyoTests;
+			productReference = 75AA17AA1DF6BFFE008B2E02 /* rokuyoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +177,11 @@
 					41DAEBAF1DC206C50011BB35 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+					};
+					75AA17A91DF6BFFE008B2E02 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 41DAEBAF1DC206C50011BB35;
 					};
 				};
 			};
@@ -144,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				41DAEBAF1DC206C50011BB35 /* rokuyo */,
+				75AA17A91DF6BFFE008B2E02 /* rokuyoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +213,13 @@
 				41DAEBC01DC206C50011BB35 /* Assets.xcassets in Resources */,
 				41DAEBBE1DC206C50011BB35 /* Main.storyboard in Resources */,
 				41EB4EBA1DC3520800D612C6 /* kyureki.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75AA17A81DF6BFFE008B2E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75AA17A61DF6BFFE008B2E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AA17AD1DF6BFFE008B2E02 /* rokuyoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75AA17B01DF6BFFE008B2E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41DAEBAF1DC206C50011BB35 /* rokuyo */;
+			targetProxy = 75AA17AF1DF6BFFE008B2E02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41DAEBBC1DC206C50011BB35 /* Main.storyboard */ = {
@@ -306,6 +385,32 @@
 			};
 			name = Release;
 		};
+		75AA17B11DF6BFFE008B2E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = rokuyoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tototti.rokuyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rokuyo.app/rokuyo";
+			};
+			name = Debug;
+		};
+		75AA17B21DF6BFFE008B2E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = rokuyoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tototti.rokuyoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rokuyo.app/rokuyo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +431,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		75AA17B31DF6BFFE008B2E02 /* Build configuration list for PBXNativeTarget "rokuyoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75AA17B11DF6BFFE008B2E02 /* Debug */,
+				75AA17B21DF6BFFE008B2E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
