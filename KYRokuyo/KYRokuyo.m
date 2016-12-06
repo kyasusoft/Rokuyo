@@ -50,7 +50,10 @@
     int changeDay;	// inMonthの中で旧暦が次の月に変わる日	plist:mmddCCmmdd
     int kyuMonth2;	// inMonthの中で旧暦の次の月			plist:mmddccMMdd
     int	kyuDay2;	// inMonthの中で旧暦の次の一日			plist:mmddccmmDD
-
+    int changeDay2; // inMonthの中で旧暦が次の月に変わる日	plist:mmddccmmddCCmmdd
+    int kyuMonth3;  // inMonthの中で旧暦が次の月に変わる日	plist:mmddccmmddccMMdd
+    int kyuDay3;    // inMonthの中で旧暦が次の月に変わる日	plist:mmddccmmddccmmDD
+    
     //対象年以外は、nilを返す
     if (inYear < _minYear || _maxYear < inYear) {
         return nil;
@@ -63,15 +66,30 @@
     changeDay = [kyuData substringWithRange:NSMakeRange(4, 2)].intValue;
     kyuMonth2 = [kyuData substringWithRange:NSMakeRange(6, 2)].intValue;
     kyuDay2   = [kyuData substringWithRange:NSMakeRange(8, 2)].intValue;
+
+    // 1ヶ月内に2回旧暦が変わる
+    if (kyuData.length == 16) {
+        changeDay2 = [kyuData substringWithRange:NSMakeRange(10, 2)].intValue;
+        kyuMonth3 = [kyuData substringWithRange:NSMakeRange(12, 2)].intValue;
+        kyuDay3 = [kyuData substringWithRange:NSMakeRange(14, 2)].intValue;
+    } else {
+        changeDay2 = 32;
+        kyuMonth3 = 0;
+        kyuDay3 = 0;
+    }
     
     if ( inDay < changeDay ) {
         // 月の初めから数える
         _kyuMonth = kyuMonth1;
         _kyuDay   = kyuDay1 + (inDay - 1);
-    } else {
+    } else if (changeDay <= inDay && inDay < changeDay2) {
         // 月の途中から数える
         _kyuMonth = kyuMonth2;
         _kyuDay   = kyuDay2 + (inDay - changeDay);
+    } else if (changeDay2 <= inDay) {
+        // 月の途中から数える
+        _kyuMonth = kyuMonth3;
+        _kyuDay   = kyuDay3 + (inDay - changeDay2);
     }
     
     // 六曜を求める
